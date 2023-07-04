@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media screen(sm){
+    .bg-hero{
+    width:100%;
+    height:600px;
+    @apply absolute rounded-b-3xl top-0  bg-gradient-to-r from-white to-heroB;
+    }
+}
+@media screen(md){
+    .bg-hero{
+    width:100%;
+    height:500px;
+    @apply absolute rounded-b-3xl top-0  bg-gradient-to-r from-white to-heroB;
+    }
+}
+@media screen(lg){
+    .bg-hero{
+    width:68%;
+    height:600px;
+    @apply absolute rounded-b-3xl top-0 ml-6 bg-gradient-to-r from-white to-heroB;
+    }
+}
