@@ -14,20 +14,24 @@
   <title>Frontend Mentor | Body Mass Index Calculator</title>
 </head>
 
-<body class="overflow-x-hidden	">
+<body>
   <!--Hero Section-->
   <section id="Hero">
-    <div class="flex items-center ">
+    <div class="flex items-center mt-10  font-Inter mx-6 md:mx-10 lg:mx-28 lg:max-w-lg">
+      <!--Background_image-->
       <div class="bg-hero">
       </div>
-      <div class="relative mt-12  space-y-6 mx-6  md:mx-10 lg:ml-20 lg:max-w-lg ">
-        <div class="space-y-6">
-          <img src="./assets/images/logo.svg" alt="logo" class="mx-auto w-12  mb-10 lg:mx-0 lg:mb-32 ">
+      <!--Contents-->
+      <div class="relative mt-10 space-y-6 ">
+        <div class="space-y-6 ">
+          <div>
+            <img src="./assets/images/logo.svg" alt="logo" class="mx-auto mb-20 lg:mx-0">
+          </div>
           <h1
-            class="text-GunMetal text-center  px-10 tracking-wide font-semibold text-5xl md:px-36 lg:text-left lg:px-0 lg:tracking-widest  ">
+            class="text-GunMetal text-center  px-6 tracking-wide font-semibold text-5xl md:px-36 lg:text-left lg:px-0 lg:tracking-widest  ">
             Body Mass Index Calculator
           </h1>
-          <p class="text-DarkBlue text-center md:px-10 lg:text-md  lg:px-0 lg:pr-20 lg:text-left">
+          <p class="text-DarkBlue text-center  lg:text-md  lg:px-0 lg:pr-20 lg:text-left">
             Better understand your weight in relation to your height using our body mass index (BM) calculator. While
             BMI
             is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your
@@ -39,32 +43,31 @@
     </div>
     <!--Details_Container-->
     <div
-      class=" mt-12 mx-6 flex flex-col relative bg-white rounded-2xl shadow-lg space-y-6 p-6 md:items-start md:max-w-xl lg:max-w-xl lg:-top-96 lg:-right-1/2 lg:overflow-x-hidden">
+      class="font-Inter mt-12 mx-6 flex flex-col relative bg-white rounded-2xl shadow-lg space-y-6 p-8 md:items-start md:mx-10 lg:max-w-lg lg:-top-96 lg:-right-1/2 ">
       <div>
         <h1 class="text-2xl text-GunMetal text-left font-medium">
           Enter your details below
         </h1>
       </div>
-
       <!--checkBoxes section-->
-      <div class="flex font-medium justify-between md:space-x-64 lg:space-x-48 ">
-        <div class="space-x-2 flex items-center">
+      <div class="flex font-medium justify-between  md:space-x-64 lg:space-x-48 ">
+        <div class="space-x-2 ">
           <input type="radio" class="text-Blue form-radio h-6 w-6 "><span>
             Metric
           </span>
         </div>
-        <div class="space-x-2 flex items-center  ">
+        <div class="space-x-2 ">
           <input type="radio" class=" form-radio text-Blue h-6 w-6"><span>
             Imperial
           </span>
         </div>
       </div>
       <!--forms_Section-->
-      <div class="flex flex-col md:flex-row md:space-x-20 md:w-full lg:flex-row lg:space-x-20">
+      <div class="flex flex-col md:flex-row md:justify-between md:space-x-3 md:w-full lg:flex-row lg:space-x-20">
         <div class="space-y-2">
           <span class="text-DarkBlue">Height</span>
           <input type="text" name="height" id="height"
-            class="form-input  w-full py-3 rounded-md border-gray-300 shadow-sm focus:border-Blue-300 focus:ring focus:ring-Blue focus:ring-opacity-50 placeholder:text-end placeholder:text-Blue placeholder:font-semibold placeholder:text-xl"
+            class="form-input w-full py-3 rounded-md border-gray-300 shadow-sm focus:border-Blue-300 focus:ring focus:ring-Blue focus:ring-opacity-50 placeholder:text-end placeholder:text-Blue placeholder:font-semibold placeholder:text-xl"
             placeholder="cm">
         </div>
         <div class=" space-y-2">
@@ -76,7 +79,7 @@
       </div>
       <!--Blue_Container-->
       <div
-        class="bg-Blue text-white font-Inter bg-opacity-90 w-full p-10 rounded-lg  md:rounded-l-lg md:rounded-r-full md:flex md:space-x-40 md:tracking-wide md:items-center lg:rounded-r-full ">
+        class="bg-Blue shadow-sm text-white font-Inter bg-opacity-90 w-full mx-auto p-8 rounded-lg md:rounded-r-full md:flex md:mx-auto md:space-x-20 md:tracking-wide md:items-center  lg:rounded-r-full ">
         <div>
           <h1 class="font-semibold">
             Your BMI is...</h1>
@@ -84,13 +87,88 @@
           <h2>
         </div>
         <div>
-          <h2 class=" antialiased font-thin">Your BMI suggests you’re a healthy weight. Your ideal weight is between
-          </h2><span class="font-semibold">63.3kgs - 85.2kgs.</span>
+          <h2 class=" antialiased font-thin">Your BMI suggests you’re a healthy weight. Your ideal weight is
+            between<span class="font-semibold"> 63.3kgs - 85.2kgs.</span>
+          </h2>
         </div>
-
+      </div>
+    </div>
+    <!--End_of_Hero_section-->
+  </section>
+  <!--Feature_Section-->
+  <section id="Feature_section">
+    <!--Container_Section-->
+    <div
+      class="flex space-y-6 flex-col  mt-10 items-center md:flex-row md:mx-10 md:space-x-10 lg:-mt-48 lg:mx-52 lg:justify-between">
+      <!--Image-->
+      <div class=" md:-ml-28 lg:max-w-lg  ">
+        <img src="./assets/images/image-man-eating.webp" alt="eaitng_man">
+      </div>
+      <!--Paprahraph_Text-->
+      <div class=" antialiased font-Inter px-8 text-left md:px-0  md:max-w-sm lg:max-w-md  lg:p-0   ">
+        <div class="right-48 absolute">
+          <img src="./assets/images/pattern-curved-line-left.svg" alt="curved-line" class=" invisible lg:visible lg:-mt-56 ">
+        </div>
+        <h1 class=" text-3xl font-semibold text-left text-GunMetal md:text-left md:text-4xl lg:text-left lg:text-5xl ">
+          What your BMI result means
+        </h1>
+        <p class="text-GunMetal pt-6 md:pr-7 ">
+          A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a healthy weight may lower your
+          chances of experiencing health issues later on, such as obesity and type 2 diabetes. Aim for a nutritious diet
+          with reduced fat and sugar content, incorporating ample fruits and vegetables. Additionally, strive for
+          regular
+          physical activity, ideally about 30 minutes daily for five days a week.
+        </p>
+      </div>
+    </div>
+    <!--Benefits section-->
+    <!--1st-->
+    <div
+      class="antialiased flex flex-col space-y-8 font-Inter mt-10 lg:-mt-48 lg:mx-52 lg:justify-between ">
+      
+      <div class="px-8 space-y-3 md:flex ">
+        <img src="./assets/images/icon-eating.svg" alt="eat_icon" class="md:pr-6">
+        <div>
+          <h1 class="text-xl font-semibold text-GunMetal">
+            Healthy Eating
+          </h1>
+          <p class="pt-3">
+            Healthy eating promotes weight control, disease prevention, better digestion, immunity, mental clarity, and
+            mood.
+          </p>
+        </div>
+      </div>
+      <!--2nd -->
+      <div class="px-8 space-y-3   md:flex  ">
+        <img src="./assets/images/icon-exercise.svg" alt="eat_icon" class="md:pr-6">
+        <div>
+          <h1 class="text-xl font-semibold text-GunMetal">
+            Regular exercise
+          </h1>
+          <p class="pt-3">
+            Exercise improves fitness, aids weight control, elevates mood, and reduces disease risk, fostering wellness
+            and longevity.
+          </p>
+        </div>
+      </div>
+      <!--3rd-->
+      <div class="px-8 space-y-3  md:flex">
+        <img src="./assets/images/icon-sleep.svg" alt="eat_icon" class="md:pr-6">
+        <div>
+          <h1 class="text-xl font-semibold text-GunMetal">
+            Adequate sleep</h1>
+          <p class="pt-3">
+            Sleep enhances mental clarity, emotional stability, and physical wellness, promoting overall restoration and
+            rejuvenation.
+          </p>
+        </div>
       </div>
     </div>
   </section>
+  <section>
+    <!--Benefits_Section-->
+  </section>
+
 </body>
 
 </html>
