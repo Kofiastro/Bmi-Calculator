@@ -14,50 +14,81 @@
   <title>Frontend Mentor | Body Mass Index Calculator</title>
 </head>
 
-<body>
+<body class="overflow-x-hidden	">
   <!--Hero Section-->
   <section id="Hero">
     <div class="flex items-center ">
       <div class="bg-hero">
       </div>
-      <div class="relative mt-12  space-y-6 mx-6  md:mx-10 lg:ml-32 lg:max-w-xl ">
-        <div>
-          <img src="./assets/images/logo.svg" alt="logo" class="mx-auto w-12  mb-10 lg:mx-0 lg:mb-20 ">
-        <h1 class="text-GunMetal text-center px-10 tracking-wide font-semibold text-5xl md:px-36 lg:text-left lg:text-6xl lg:px-0 lg:tracking-widest  ">
-          Body Mass Index Calculator
-        </h1>
-        <p class="text-DarkBlue text-center md:px-10 lg:text-md  lg:px-0 lg:text-left">
-          Better understand your weight in relation to your height using our body mass index (BM) calculator. While BMI
-          is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall
-          health and well-being.
-        </p>
+      <div class="relative mt-12  space-y-6 mx-6  md:mx-10 lg:ml-20 lg:max-w-lg ">
+        <div class="space-y-6">
+          <img src="./assets/images/logo.svg" alt="logo" class="mx-auto w-12  mb-10 lg:mx-0 lg:mb-32 ">
+          <h1
+            class="text-GunMetal text-center  px-10 tracking-wide font-semibold text-5xl md:px-36 lg:text-left lg:px-0 lg:tracking-widest  ">
+            Body Mass Index Calculator
+          </h1>
+          <p class="text-DarkBlue text-center md:px-10 lg:text-md  lg:px-0 lg:pr-20 lg:text-left">
+            Better understand your weight in relation to your height using our body mass index (BM) calculator. While
+            BMI
+            is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your
+            overall
+            health and well-being.
+          </p>
         </div>
-        
       </div>
     </div>
     <!--Details_Container-->
-    <div class=" mt-12 mx-6 flex flex-col relative bg-white rounded-2xl shadow-lg space-y-4 p-6 md:items-start lg:max-w-2xl lg:-top-60 lg:-right-1/2">
+    <div
+      class=" mt-12 mx-6 flex flex-col relative bg-white rounded-2xl shadow-lg space-y-6 p-6 md:items-start lg:max-w-xl lg:-top-96 lg:-right-1/2 ">
       <div>
-        <h1 class="text-2xl text-GunMetal text-center font-medium">
+        <h1 class="text-2xl text-GunMetal text-left font-medium">
           Enter your details below
         </h1>
       </div>
-      
-      <!--checkBoxes section-->
-    <div class="flex font-medium justify-between md:space-x-60 ">
-      <div class="space-x-2 flex items-center">
-        <input type="radio" class="bg-Blue h-6 w-6 "><span>
-          Metric
-         </span>
-      </div>
-      <div class="space-x-3 flex items-center  ">
-      <input type="radio" class="bg-Blue h-6 w-6  hover:animate-ping"><span >
-        Imperial
-       </span>
-    </div>
-    </div>
-    <!--forms_Section-->
 
+      <!--checkBoxes section-->
+      <div class="flex font-medium justify-between md:space-x-64 lg:space-x-48 ">
+        <div class="space-x-2 flex items-center">
+          <input type="radio" class="text-Blue form-radio h-6 w-6 "><span>
+            Metric
+          </span>
+        </div>
+        <div class="space-x-2 flex items-center  ">
+          <input type="radio" class=" form-radio text-Blue h-6 w-6"><span>
+            Imperial
+          </span>
+        </div>
+      </div>
+      <!--forms_Section-->
+      <div class="flex flex-col md:flex-row md:space-x-20 md:w-full lg:flex-row lg:space-x-20">
+        <div class="space-y-2">
+          <span class="text-DarkBlue">Height</span>
+          <input type="text" name="height" id="height"
+            class="form-input  w-full py-3 rounded-md border-gray-300 shadow-sm focus:border-Blue-300 focus:ring focus:ring-Blue focus:ring-opacity-50 placeholder:text-end placeholder:text-Blue placeholder:font-semibold placeholder:text-xl"
+            placeholder="cm">
+        </div>
+        <div class=" space-y-2">
+          <span class="text-DarkBlue">Weight</span>
+          <input type="text" name="height" id="height"
+            class="form-input w-full py-3 rounded-md  border-gray-300 shadow-sm focus:border-Blue-300 focus:ring focus:ring-Blue focus:ring-opacity-50 placeholder:text-end placeholder:text-Blue placeholder:font-semibold placeholder:text-xl"
+            placeholder="Kg">
+        </div>
+      </div>
+      <!--Blue_Container-->
+      <div
+        class="bg-Blue text-white font-Inter bg-opacity-90 w-full p-10 rounded-lg  md:rounded-l-lg md:rounded-r-full md:flex md:space-x-40 md:tracking-wide md:items-center lg:rounded-r-full ">
+        <div>
+          <h1 class="font-semibold">
+            Your BMI is...</h1>
+          <h3 class=" antialiased text-5xl font-semibold py-4">23.4</h3>
+          <h2>
+        </div>
+        <div>
+          <h2 class=" antialiased font-thin">Your BMI suggests you’re a healthy weight. Your ideal weight is between
+          </h2><span class="font-semibold">63.3kgs - 85.2kgs.</span>
+        </div>
+
+      </div>
     </div>
   </section>
 </body>
