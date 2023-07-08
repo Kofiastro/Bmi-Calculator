@@ -18,7 +18,7 @@
 }
 @media screen(lg){
     .bg-hero{
-    width:60%;
+    width:90%;
     height:700px;
     @apply absolute rounded-b-3xl top-0 ml-6 bg-gradient-to-r from-white to-heroB; 
     }
@@ -26,4 +26,6 @@
 .imagez{
 @apply w-20 h-20
 }
+#Benefits_Section{
+@apply  bg-BackImg}
 

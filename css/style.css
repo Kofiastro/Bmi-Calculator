@@ -931,10 +931,6 @@ select {
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
-.overflow-x-hidden {
-  overflow-x: hidden;
-}
-
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -1141,7 +1137,7 @@ select {
 
 @media (min-width: 1020px){
   .bg-hero{
-    width:60%;
+    width:90%;
     height:700px;
     position: absolute;
     top: 0px;
@@ -1159,6 +1155,11 @@ select {
 .imagez {
   height: 5rem;
   width: 5rem;
+}
+
+#Benefits_Section {
+  --tw-bg-opacity: 1;
+  background-color: hsl(200 75% 98% / var(--tw-bg-opacity));
 }
 
 .placeholder\:text-end::-moz-placeholder {
@@ -1429,6 +1430,10 @@ select {
 
   .lg\:max-w-md {
     max-width: 28rem;
+  }
+
+  .lg\:max-w-xl {
+    max-width: 36rem;
   }
 
   .lg\:flex-row {
