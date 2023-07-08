@@ -17,7 +17,8 @@ module.exports = {
         GunMetal: 'hsl(215, 31%, 21%)',
         DarkBlue: 'hsl(215, 17%, 45%)',
         Borders: 'hsl(200, 24%, 88%)',
-        heroB: "hsl(207,94%,92%)",
+        heroB: 'hsl(207,94%,92%)',
+        BackImg:'hsl(200,75%,98%)',
       }
     },
   },

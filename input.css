@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@media screen(sm){
+
     .bg-hero{
     width:100%;
-    height:700px;
+    height:800px;
     @apply absolute rounded-b-3xl top-0  bg-gradient-to-r from-white to-heroB ;
     }
-}
+
 @media screen(md){
     .bg-hero{
     width:100%;
@@ -23,3 +23,9 @@
     @apply absolute rounded-b-3xl top-0 ml-6 bg-gradient-to-r from-white to-heroB; 
     }
 }
+.imagez{
+@apply w-20 h-20
+}
+#Benefits_Section{
+@apply  bg-BackImg}
+
