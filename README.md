@@ -16,7 +16,7 @@ This is a solution to the [Body Mass Index Calculator challenge on Frontend Ment
 
 ### Screenshot
 
-![](./images/3col.png)
+![](./assets/images/BMI.png)
 
 ### Links
 
