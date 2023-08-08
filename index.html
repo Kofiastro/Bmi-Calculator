@@ -11,12 +11,13 @@
   <!--CSS-->
   <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src="./js/script.js" defer></script>
   <title>Frontend Mentor | Body Mass Index Calculator</title>
 </head>
 
 <body>
   <!--Hero Section-->
-  <section id="Hero">
+  <section id="hero">
     <div class="flex items-center justify-center mx-6 mt-10 font-Inter md:mx-10 lg:mx-28 lg:max-w-lg lg:text-left">
       <!--Background_image-->
       <div class="bg-hero">
@@ -43,40 +44,66 @@
     </div>
     <!--Details_Container-->
     <div
-      class=" font-Inter mt-12 mx-4 flex  items-left  flex-col relative bg-white rounded-2xl shadow-xl shadow-Borders space-y-6 p-8 md:items-start md:mx-10 lg:max-w-xl lg:-top-96 lg:-right-1/2">
+      class=" Details font-Inter mt-12 mx-4 flex  items-left  flex-col relative bg-white rounded-2xl shadow-xl shadow-Borders space-y-6 p-8 md:items-start md:mx-10 lg:max-w-xl lg:-top-96 lg:-right-1/2">
       <div>
         <h1 class="text-2xl text-GunMetal text-left font-semibold">
           Enter your details below
         </h1>
       </div>
-      <!--checkBoxes section-->
-      <div class="flex font-medium justify-between  md:space-x-64 lg:space-x-48 ">
-        <div class="space-x-2 ">
-          <input type="radio" class="text-Blue form-radio h-6 w-6 "><span>
-            Metric
-          </span>
+      <!--Radio section-->
+      <div class="Radio-Sel flex  font-medium justify-between  md:space-x-64 lg:space-x-48 ">
+        <div class="Sel space-x-2 flex items-center accent-Blue">
+          <input id="Metric" type="radio" class=" h-8 w-8 "/>
+          <label for="Metric">Metric</label>
         </div>
-        <div class="space-x-2 ">
-          <input type="radio" class=" form-radio text-Blue h-6 w-6"><span>
-            Imperial
-          </span>
+        <div class="Sel space-x-2 flex items-center pr-16 md:p-0 accent-Blue">
+          <input id="Imperial" type="radio" class= " h-8 w-8 "/>
+          <label for="Imperial">Imperial</label>
         </div>
       </div>
       <!--forms_Section-->
-      <div class="flex flex-col md:flex-row md:justify-between md:space-x-3 md:w-full lg:flex-row lg:space-x-20">
-        <div class="space-y-2">
-          <span class="text-DarkBlue">Height</span>
-          <input type="text" name="height" id="height"
-            class="form-input w-full py-3 rounded-md border-gray-300 shadow-sm focus:border-Blue-300 focus:ring focus:ring-Blue focus:ring-opacity-50 placeholder:text-end placeholder:text-Blue placeholder:font-semibold placeholder:text-xl"
-            placeholder="cm">
+      <form class="BMi">
+        <!--Metric_Form-->
+        <div class="metric-form hidden flex flex-col md:flex-row md:justify-between md:space-x-3 md:w-full lg:flex-row lg:space-x-16 ">
+          <div class="space-y-2  ">
+            <span class="text-DarkBlue">Height</span>
+            <input type="text" name="height" id="height"
+              class=" w-full py-5 px-4  text-2xl font-bold rounded-lg border border-Borders shadow-sm focus:border-Blue focus:outline-none focus:ring-Blue  placeholder:text-end  placeholder:text-Blue placeholder:font-semibold placeholder:text-xl "
+              placeholder="cm">
+          </div>
+          <div class=" space-y-2">
+            <span class="text-DarkBlue">Weight</span>
+            <input type="text" name="weight" id="weight"
+              class=" w-full py-5 px-4 text-2xl  rounded-lg border font-bold border-Borders shadow-sm  focus:border-Blue focus:outline-none focus:ring-Blue   placeholder:text-end placeholder:text-Blue placeholder:font-semibold placeholder:text-xl"
+              placeholder="kg">
+          </div>
         </div>
-        <div class=" space-y-2">
-          <span class="text-DarkBlue">Weight</span>
-          <input type="text" name="height" id="height"
-            class="form-input w-full py-3 rounded-md  border-gray-300 shadow-sm focus:border-Blue-300 focus:ring focus:ring-Blue focus:ring-opacity-50 placeholder:text-end placeholder:text-Blue placeholder:font-semibold placeholder:text-xl"
-            placeholder="Kg">
+        <!--Imperial_Form-->
+        <div class=" Imperial-form  md:space-x-3   ">
+          <div class="flex flex-col space-y-5  text-DarkBlue ">
+            Height
+            <div class="space-x-4 pt-4 pb-4 text-xl font-bold flex  text-black">
+              <input type="text" name="height" id="height"
+                class="py-5 pl-4 w-1/2 placeholder:px-6 rounded-lg border border-Borders shadow-sm focus:border-Blue focus:outline-none focus:ring-Blue  placeholder:text-end  placeholder:text-Blue placeholder:font-semibold placeholder:text-xl "
+                placeholder="ft"/>
+              <input type="text" name="height" id="height"
+                class="py-5 pl-4 w-1/2 placeholder:px-6 rounded-lg border border-Borders shadow-sm focus:border-Blue focus:outline-none focus:ring-Blue  placeholder:text-end  placeholder:text-Blue placeholder:font-semibold placeholder:text-xl "
+                placeholder="in"/>
+            </div>
+            Weight
+            <div class="space-x-4 text-xl font-bold flex  text-black">
+              <input type="text" name="height" id="height"
+                class=" w-1/2 py-5 pl-4 placeholder:px-6 rounded-lg border border-Borders shadow-sm focus:border-Blue focus:outline-none focus:ring-Blue  placeholder:text-end  placeholder:text-Blue placeholder:font-semibold placeholder:text-xl "
+                placeholder="st">
+              <input type="text" name="height" id="height"
+                class=" w-1/2 py-5 pl-4 placeholder:px-6 rounded-lg border border-Borders shadow-sm focus:border-Blue focus:outline-none focus:ring-Blue  placeholder:text-end  placeholder:text-Blue placeholder:font-semibold placeholder:text-xl "
+                placeholder="lbs">
+            </div>
+
+          </div>
+
         </div>
-      </div>
+      </form>
       <!--Blue_Container-->
       <div
         class="bg-Blue shadow-lg shadow-Borders text-white  items-center font-Inter bg-opacity-90 w-full mx-auto p-8 rounded-lg md:rounded-r-full  md:flex  md:mx-auto md:space-x-20 md:tracking-wide md:items-center lg:rounded-r-full ">
