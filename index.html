@@ -52,21 +52,22 @@
           </h1>
         </div>
         <!--Radio section-->
-        <div class="Radio-Sel flex  font-medium justify-between  md:space-x-64 lg:space-x-48 ">
-          <div class="Sel space-x-2 flex items-center accent-Blue">
-            <input id="Metric" type="radio" class=" h-8 w-8 " />
+        <div class="flex font-medium justify-between  md:space-x-64 lg:space-x-48" id="radio-section">
+          <div class="metricRadio space-x-2 flex items-center accent-Blue">
+            <input id="Metric" type="radio" value="" name="list-radio" class=" h-8 w-8 focus:ring-blue-500 " checked />
             <label for="Metric">Metric</label>
           </div>
-          <div class="Sel space-x-2 flex items-center pr-16 md:p-0 accent-Blue">
-            <input id="Imperial" type="radio" class=" h-8 w-8 " />
+          <div class="imperialRadio space-x-2 flex items-center pr-16 md:p-0 accent-Blue">
+            <input id="Imperial" type="radio" value="" name="list-radio" class=" h-8 w-8 focus:ring-blue-500 " />
             <label for="Imperial">Imperial</label>
           </div>
         </div>
+
         <!--forms_Section-->
         <form class="BMi">
           <!--Metric_Form-->
-          <div
-            class="metric-form flex flex-col md:flex-row md:justify-between md:space-x-3 md:w-full lg:flex-row lg:space-x-16 ">
+          <div class="flex flex-col md:flex-row md:justify-between md:space-x-3 md:w-full lg:flex-row lg:space-x-16"
+            id="Metric-form">
             <div class="space-y-2  ">
               <span class="text-DarkBlue">Height</span>
               <input type="text" name="height" id="MetricHeight"
@@ -81,7 +82,7 @@
             </div>
           </div>
           <!--Imperial_Form-->
-          <div class=" Imperial-form  md:space-x-3 hidden ">
+          <div class="md:space-x-3 hidden " id="Imperial-form">
             <div class="flex flex-col space-y-5  text-DarkBlue ">
               Height
               <div class="space-x-4 pt-4 pb-4 text-xl font-bold flex  text-black">
@@ -172,7 +173,7 @@
           </div>
         </div>
         <!--2nd -->
-        <div class=" px-8 space-y-3 md:flex  lg:flex-col lg:px-0 ">
+        <div class=" px-8 space-y-3 md:flex lg:flex-col lg:px-0 ">
           <img src="./assets/images/icon-exercise.svg" alt="eat_icon" class="md:pr-6 imagez">
           <div>
             <h1 class="text-xl font-semibold text-GunMetal lg:text-2xl">
