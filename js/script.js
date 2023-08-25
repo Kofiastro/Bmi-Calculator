@@ -60,18 +60,24 @@ function metricField(e) {
     //Category
     if (BMI <18.5) {
         h1.innerText = 'Underweight'
-        
+        h2.innerText='less than 18.5'
     }
     if (BMI >=18.5) {
         h1.innerText = 'Normal weight';
+        h2.innerText='between 18.5-24.9'
+
     }
     if (BMI >=25) {
         h1.innerText = 'Overweight';
+        h2.innerText='between 25-29.9'
+
     }
     if (BMI >=30) {
         h1.innerText = 'Obeese';
+        h2.innerText='between 30 or Greater'
+
     }
-    
+
 }
 
 
