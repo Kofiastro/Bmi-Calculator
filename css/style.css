@@ -818,6 +818,14 @@ video {
   font-weight: 100;
 }
 
+.font-normal {
+  font-weight: 400;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
 .tracking-wide {
   letter-spacing: 0.025em;
 }
